@@ -13,7 +13,7 @@ int main( void ){
     
     for(;;){
          clock.get_Time(time);
-         clock.print_Time(time); // dit kan in de get time functie
+         //clock.print_Time(time); // dit kan in de get time functie
          hwlib::wait_ms(1000);
     }
 }
