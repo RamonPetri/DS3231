@@ -32,7 +32,7 @@ void DS3231::set_Date(int day,int month, int year){
     auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda(clock,data);
     const uint8_t writeBuff[4] = {0x04, convert_dec_to_bin(day),
                                  convert_dec_to_bin(month),
-                                 convert_dec_to_bin(year)};
+                                 convert_dec_to_bin(year-2000)};
     hwlib::i2c_write_transaction(i2c_bus, chipaddres).write(writeBuff,4);
 }
 
@@ -86,30 +86,33 @@ unsigned char* DS3231::get_Date(unsigned char date[])
     return date;
 }
 
-///\brief //Print date and time
+///\brief //Print date and time to Display
 ///\detail  //This function takes two unsigned chars a date one and a time one
             //This function will print the date and time in the following format:
             //"dd-MM-YY ss-mm-HH" this function also checks if any values are lower
             // than 10 if so the function will print a leading 0
 void DS3231::print_Date_Time(unsigned char date[],unsigned char time[]){
-    hwlib::cout<<convert_bin_to_dec(date[0]);
-    if(convert_bin_to_dec(date[0]) < 10){hwlib::cout<<'0';}
-    hwlib::cout<<'/';
-    hwlib::cout<<convert_bin_to_dec(date[1]);
-    if(convert_bin_to_dec(date[1]) < 10){hwlib::cout<<'0';}
-    hwlib::cout<<'/';
-    hwlib::cout<<convert_bin_to_dec(date[2]);
-    if(convert_bin_to_dec(date[2] < 10)){hwlib::cout<<'0';}
-    hwlib::cout<<' ';
-    
-    hwlib::cout<< convert_bin_to_dec(time[2]);
-    if(convert_bin_to_dec(time[2]) < 10){hwlib::cout<<"0";}
-    hwlib::cout<<':';
-    if(convert_bin_to_dec(time[1]) < 10){hwlib::cout<<"0";}
-    hwlib::cout<< convert_bin_to_dec(time[1]);
-    hwlib::cout<<':';
-    if(convert_bin_to_dec(time[0]) < 10){hwlib::cout<<"0";}
-    hwlib::cout<< convert_bin_to_dec(time[0]);
-    hwlib::cout<<hwlib::endl;
+    auto i2c_bus = hwlib::i2c_bus_bit_banged_scl_sda(clock,data);
+    auto oled    = hwlib::glcd_oled( i2c_bus, 0x3c ); 
+    auto font    = hwlib::font_default_8x8();
+    auto display = hwlib::terminal_from( oled, font );
+    display<<"\f";
+    if(convert_bin_to_dec(date[0]) < 10){ display<<'0';}
+    display<<convert_bin_to_dec(date[0])<<'/';
+    if(convert_bin_to_dec(date[1]) < 10){display<<'0';}
+    display<<convert_bin_to_dec(date[1])<<'/';
+    if(convert_bin_to_dec(date[2] < 10)){display<<'0';}
+    display<<convert_bin_to_dec(date[2])<<' ';
+    display<<"\n";
+    display<<"\n";
+    if(convert_bin_to_dec(time[2]) < 10){display<<"0";}
+    display<< convert_bin_to_dec(time[2])<<':';
+    if(convert_bin_to_dec(time[1]) < 10){display<<"0";}
+    display<< convert_bin_to_dec(time[1])<<':';
+    if(convert_bin_to_dec(time[0]) < 10){display<<"0";}
+    display<< convert_bin_to_dec(time[0]);
+    hwlib::wait_ms(1);
+    display<<hwlib::flush;
+    hwlib::wait_ms(1);
 }
 
