@@ -3,7 +3,10 @@
 
 #include "DS3231.h"
 #include "hwlib.hpp"
-
+///\brief ///The user class for a OLED display set time and date menu
+///\details /// This class inherits form DS3231 and there for requires hwlib to operate 
+            /// this class is written to giva a user menu to enable the setting of date & time
+            /// by using hardware buttons
 class user : public DS3231{
 private: 
      hwlib::target::pin_in & saveSetting;

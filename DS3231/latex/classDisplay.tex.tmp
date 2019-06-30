@@ -2,7 +2,7 @@
 \label{classDisplay}\index{Display@{Display}}
 
 
-//\+The display class for a O\+L\+ED display  
+///\+The display class for a O\+L\+ED display  
 
 
 
@@ -21,16 +21,15 @@ Collaboration diagram for Display\+:
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}{Display} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres, hwlib\+::terminal\+\_\+from \&display, unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em //\+Display class constructor \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDisplay_af82ef97cafae973112710550db345571}\label{classDisplay_af82ef97cafae973112710550db345571}} 
+\begin{DoxyCompactList}\small\item\em ///\+Display class constructor \end{DoxyCompactList}\item 
 void \hyperlink{classDisplay_af82ef97cafae973112710550db345571}{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time} (unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]}, hwlib\+::terminal\+\_\+from \&display)
-\begin{DoxyCompactList}\small\item\em //\+Print date time function  // This function will format and print the date and time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ///\+Print date time function  /// This function will format and print the date and time \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-//\+The display class for a O\+L\+ED display 
+///\+The display class for a O\+L\+ED display 
 
-// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate 
+/// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate this class is written to format and print date and time on a 128x64 I2C O\+L\+ED 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}\label{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}} 
@@ -41,9 +40,24 @@ void \hyperlink{classDisplay_af82ef97cafae973112710550db345571}{Display\+\_\+pri
 
 
 
-//\+Display class constructor 
+///\+Display class constructor 
 
-// This takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda 
+/// This takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda wich represents the i2c bus communcation const unit8\+\_\+t chipaddres wich represents the R\+TC i2c addres hwlib\+::terminal\+\_\+from \& display wich represents the Oled display unsinged char Time\mbox{[}\mbox{]} wich represents a buffer with time data unsinged char Date\mbox{[}\mbox{]} wich represents a buffer with date data a common call to this constructor would look something like this\+: \hyperlink{classDisplay}{Display} object(hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda, a\+\_\+rtc\+\_\+chipaddres, hwlib\+::terminal\+\_\+from \& display, unsigned char Time\mbox{[}\mbox{]}, unsinged char Date\mbox{[}\mbox{]}); 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDisplay_af82ef97cafae973112710550db345571}\label{classDisplay_af82ef97cafae973112710550db345571}} 
+\index{Display@{Display}!Display\+\_\+print\+\_\+\+Date\+\_\+\+Time@{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time}}
+\index{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time@{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time}!Display@{Display}}
+\subsubsection{\texorpdfstring{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time()}{Display\_print\_Date\_Time()}}
+{\footnotesize\ttfamily void Display\+::\+Display\+\_\+print\+\_\+\+Date\+\_\+\+Time (\begin{DoxyParamCaption}\item[{unsigned char}]{Time\mbox{[}$\,$\mbox{]},  }\item[{unsigned char}]{Date\mbox{[}$\,$\mbox{]},  }\item[{hwlib\+::terminal\+\_\+from \&}]{display }\end{DoxyParamCaption})}
+
+
+
+///\+Print date time function  /// This function will format and print the date and time 
+
+to an oled display as defined in the main.\+cpp
+
+a common call to this function would look something like this\+: \hyperlink{classDisplay}{Display} object.\+Display\+\_\+print\+\_\+\+Date\+\_\+\+Time(unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]}, hwlib\+::terminal\+\_\+from \& display); 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

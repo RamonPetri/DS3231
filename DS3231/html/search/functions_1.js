@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['display',['Display',['../classDisplay.html#ab8e9071525f8b0cf560a553cf6a4db03',1,'Display']]],
-  ['display_5fprint_5fdate_5ftime',['Display_print_Date_Time',['../classDisplay.html#af82ef97cafae973112710550db345571',1,'Display']]],
-  ['ds3231',['DS3231',['../classDS3231.html#ae604eb753bffe5a7752c0c6131c199c0',1,'DS3231']]]
+  ['convert_5fbin_5fto_5fdec',['convert_bin_to_dec',['../classDS3231.html#a505df2184898f9773d41ae8fde8e647a',1,'DS3231']]],
+  ['convert_5fdec_5fto_5fbin',['convert_dec_to_bin',['../classDS3231.html#adbe3aa8366cf09b1ec1f7d0e4aa826db',1,'DS3231']]]
 ];

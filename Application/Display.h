@@ -2,9 +2,9 @@
 #define DISPLAY_H
 
 #include "DS3231.h"
-///\brief //The display class for a OLED display
-///\details // This class inherits form DS3231 and there for requires hwlib to operate 
-            // this class is written to format and print date and time on a 128x64 I2C OLED
+///\brief ///The display class for a OLED display
+///\details /// This class inherits form DS3231 and there for requires hwlib to operate 
+            /// this class is written to format and print date and time on a 128x64 I2C OLED
 class Display : public DS3231{
 private:
     hwlib::terminal_from & display;

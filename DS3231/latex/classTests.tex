@@ -2,7 +2,7 @@
 \label{classTests}\index{Tests@{Tests}}
 
 
-//\+The \hyperlink{classTests}{Tests} class to test \hyperlink{classDS3231}{D\+S3231} functions  
+///\+The \hyperlink{classTests}{Tests} class to test \hyperlink{classDS3231}{D\+S3231} functions  
 
 
 
@@ -21,15 +21,23 @@ Collaboration diagram for Tests\+:
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classTests_afc34127a38f4366f6a014ae65e10ee57}{Tests} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres, unsigned char Date\mbox{[}$\,$\mbox{]}, unsigned char Time\mbox{[}$\,$\mbox{]}, int test\+Sec=Sec, int test\+Min=Min, int test\+Hr=Hour, int test\+Day=Day, int test\+Month=Month, int test\+Year=Year, unsigned char Bin=bin\+Value, unsigned char Dec\+To\+Bin=dec\+Tobin\+Value, int Dec=dec\+Value, int Bin\+To\+Dec=bin\+Todec\+Value)
-\begin{DoxyCompactList}\small\item\em //\+Tests class constructor \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em ///\+Tests class constructor \end{DoxyCompactList}\item 
+bool \hyperlink{classTests_a248d3e358bc39ec091db2e5a7f6ddd6f}{Test\+\_\+\+Bin\+\_\+to\+\_\+dec} ()
+\begin{DoxyCompactList}\small\item\em ///\+Test to check the functionality of the convert\+\_\+bin\+\_\+to\+\_\+dec function \end{DoxyCompactList}\item 
+bool \hyperlink{classTests_af1957c73de97f80003a4352e499b04c1}{Test\+\_\+\+Dec\+\_\+to\+\_\+bin} ()
+\begin{DoxyCompactList}\small\item\em ///\+Test to check the functionality of the convert\+\_\+dec\+\_\+to\+\_\+bin function \end{DoxyCompactList}\item 
+bool \hyperlink{classTests_ab270a477241bfe006f3e1803108c3b16}{Test\+\_\+write\+\_\+read\+\_\+date} ()
+\begin{DoxyCompactList}\small\item\em ///\+Test to check the functionality of the write and read functions \end{DoxyCompactList}\item 
+bool \hyperlink{classTests_ab5122391e15bf4a8dda6dac97aeb39b2}{Test\+\_\+write\+\_\+read\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em ///\+Test to check the functionality of the write and read functions \end{DoxyCompactList}\item 
 void \hyperlink{classTests_ae29be1edf96424ad0f81a15bbf5b983e}{Print\+Test\+Results} ()
-\begin{DoxyCompactList}\small\item\em //\+Test print function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ///\+Test print function \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-//\+The \hyperlink{classTests}{Tests} class to test \hyperlink{classDS3231}{D\+S3231} functions 
+///\+The \hyperlink{classTests}{Tests} class to test \hyperlink{classDS3231}{D\+S3231} functions 
 
-// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate 
+/// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate This class is written as a tests class and contains tests that will check certain functions of the \hyperlink{classDS3231}{D\+S3231} class when the program is flashed to arduino Due This class contains pre-\/defined test parameters to ensure functionality of the \hyperlink{classDS3231}{D\+S3231} class It is best to comment out the test constructor + call in the main program when one wants to use a display with this library since this test writes and reads date registers witch may interfere with normal operations 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classTests_afc34127a38f4366f6a014ae65e10ee57}\label{classTests_afc34127a38f4366f6a014ae65e10ee57}} 
@@ -40,9 +48,9 @@ void \hyperlink{classTests_ae29be1edf96424ad0f81a15bbf5b983e}{Print\+Test\+Resul
 
 
 
-//\+Tests class constructor 
+///\+Tests class constructor 
 
-// This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c wich represnts the i2c bus, 
+/// This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c wich represnts the i2c bus, const uint8\+\_\+t chipaddres wich represents the R\+TC addres, unsigned char Date\mbox{[}\mbox{]} witch represents the buffer for the date, unsigned chat Time\mbox{[}\mbox{]} witch represents the buffer for the time, int test\+Sec wich represents the predefined test parameter for the seconds, int test\+Min wich reprsents the predefined test parameter for the minutes, int test\+Hr wich represents the predefined test parameter for the hours, int test\+Day wich represents the predefined test parameter for the day, int test\+Month wich reprsents the predefined test parameter for the month, int test\+Year wich represents the predefined test parameter for the year, unsigned char Bin wich represents the predefined test parameter for a Binary coded decimal, unsigned char Dec\+To\+Bin wich represents the predefined test parameter for a Decmial converted to a binary converted decimal, int Dec wich represents the predefined test parameter for a decimal value, int Bin\+To\+Dec wich represents the predefined test parameter for a binary converted decmial converted to a decimal A common call to this constructor will look something like this\+: \hyperlink{classTests}{Tests} object(hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda, a\+\_\+chipaddres, unsigned char Date\mbox{[}$\,$\mbox{]}, unsigned Time\mbox{[}$\,$\mbox{]}); The rest of the values in the constructor have predefined default values 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classTests_ae29be1edf96424ad0f81a15bbf5b983e}\label{classTests_ae29be1edf96424ad0f81a15bbf5b983e}} 
@@ -53,9 +61,49 @@ void \hyperlink{classTests_ae29be1edf96424ad0f81a15bbf5b983e}{Print\+Test\+Resul
 
 
 
-//\+Test print function 
+///\+Test print function 
 
-// This function will print the results of each test 
+/// This function will print the results of each test it will either print if the test has passed or failed when a test fails this function will print the value of any varibels that could have made the test fail \mbox{\Hypertarget{classTests_a248d3e358bc39ec091db2e5a7f6ddd6f}\label{classTests_a248d3e358bc39ec091db2e5a7f6ddd6f}} 
+\index{Tests@{Tests}!Test\+\_\+\+Bin\+\_\+to\+\_\+dec@{Test\+\_\+\+Bin\+\_\+to\+\_\+dec}}
+\index{Test\+\_\+\+Bin\+\_\+to\+\_\+dec@{Test\+\_\+\+Bin\+\_\+to\+\_\+dec}!Tests@{Tests}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Bin\+\_\+to\+\_\+dec()}{Test\_Bin\_to\_dec()}}
+{\footnotesize\ttfamily bool Tests\+::\+Test\+\_\+\+Bin\+\_\+to\+\_\+dec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///\+Test to check the functionality of the convert\+\_\+bin\+\_\+to\+\_\+dec function 
+
+///\+This function checks if after conversion by the convert\+\_\+bin\+\_\+to\+\_\+dec function the Bin value equals that of the predefined expected Bin\+To\+Dec value. If this is the case the test passes otherwise it fails and prints the result of Bin \mbox{\Hypertarget{classTests_af1957c73de97f80003a4352e499b04c1}\label{classTests_af1957c73de97f80003a4352e499b04c1}} 
+\index{Tests@{Tests}!Test\+\_\+\+Dec\+\_\+to\+\_\+bin@{Test\+\_\+\+Dec\+\_\+to\+\_\+bin}}
+\index{Test\+\_\+\+Dec\+\_\+to\+\_\+bin@{Test\+\_\+\+Dec\+\_\+to\+\_\+bin}!Tests@{Tests}}
+\subsubsection{\texorpdfstring{Test\+\_\+\+Dec\+\_\+to\+\_\+bin()}{Test\_Dec\_to\_bin()}}
+{\footnotesize\ttfamily bool Tests\+::\+Test\+\_\+\+Dec\+\_\+to\+\_\+bin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///\+Test to check the functionality of the convert\+\_\+dec\+\_\+to\+\_\+bin function 
+
+/// This function checks if after conversion by the convert\+\_\+dec\+\_\+to\+\_\+bin function the Dec value equals that of the predefined expected Dec\+To\+Bin value. If this is the case the test passes otherwise it fails and prints the result of Dec \mbox{\Hypertarget{classTests_ab270a477241bfe006f3e1803108c3b16}\label{classTests_ab270a477241bfe006f3e1803108c3b16}} 
+\index{Tests@{Tests}!Test\+\_\+write\+\_\+read\+\_\+date@{Test\+\_\+write\+\_\+read\+\_\+date}}
+\index{Test\+\_\+write\+\_\+read\+\_\+date@{Test\+\_\+write\+\_\+read\+\_\+date}!Tests@{Tests}}
+\subsubsection{\texorpdfstring{Test\+\_\+write\+\_\+read\+\_\+date()}{Test\_write\_read\_date()}}
+{\footnotesize\ttfamily bool Tests\+::\+Test\+\_\+write\+\_\+read\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///\+Test to check the functionality of the write and read functions 
+
+/// This function checks the write and read functions by first writing the predefined test values of day month and year to their respective date registers after the write operation a read operation is used to read out the date registers and store this in the unsigned char Date\mbox{[}\mbox{]} varible. The test will pass when all elements of Date\mbox{[}\mbox{]} are equal to their respective predefined test values \mbox{\Hypertarget{classTests_ab5122391e15bf4a8dda6dac97aeb39b2}\label{classTests_ab5122391e15bf4a8dda6dac97aeb39b2}} 
+\index{Tests@{Tests}!Test\+\_\+write\+\_\+read\+\_\+time@{Test\+\_\+write\+\_\+read\+\_\+time}}
+\index{Test\+\_\+write\+\_\+read\+\_\+time@{Test\+\_\+write\+\_\+read\+\_\+time}!Tests@{Tests}}
+\subsubsection{\texorpdfstring{Test\+\_\+write\+\_\+read\+\_\+time()}{Test\_write\_read\_time()}}
+{\footnotesize\ttfamily bool Tests\+::\+Test\+\_\+write\+\_\+read\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///\+Test to check the functionality of the write and read functions 
+
+/// This function checks the write and read functions by first writing the predefined test values of seconds minutes and hours to their respective date registers after the write operation a read operation is used to read out the time registers and store this in the unsigned char Time\mbox{[}\mbox{]} varible. The test will pass when all elements of Time\mbox{[}\mbox{]} are equal to their respective predefined test values 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

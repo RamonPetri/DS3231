@@ -2,6 +2,15 @@
 \label{classuser}\index{user@{user}}
 
 
+///\+The user class for a O\+L\+ED display set time and date menu  
+
+
+
+
+{\ttfamily \#include $<$user.\+h$>$}
+
+
+
 Inheritance diagram for user\+:
 % FIG 0
 
@@ -11,16 +20,54 @@ Collaboration diagram for user\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classuser_a140937f8c81560822a5fc64cfefffcac}\label{classuser_a140937f8c81560822a5fc64cfefffcac}} 
-{\bfseries user} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres, hwlib\+::target\+::pin\+\_\+in \&save\+Setting, hwlib\+::target\+::pin\+\_\+in \&start\+Setting, hwlib\+::target\+::pin\+\_\+in \&add\+Num, hwlib\+::terminal\+\_\+from \&display)
-\item 
-\mbox{\Hypertarget{classuser_af17199133dfce25d87d53e716da3c65b}\label{classuser_af17199133dfce25d87d53e716da3c65b}} 
-void {\bfseries Begin\+Setting} ()
-\item 
-\mbox{\Hypertarget{classuser_ae8ad51951cea1b9675c243bc63c3e7aa}\label{classuser_ae8ad51951cea1b9675c243bc63c3e7aa}} 
-void {\bfseries set\+\_\+date\+\_\+time} ()
-\end{DoxyCompactItemize}
+\hyperlink{classuser_a140937f8c81560822a5fc64cfefffcac}{user} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres, hwlib\+::target\+::pin\+\_\+in \&save\+Setting, hwlib\+::target\+::pin\+\_\+in \&start\+Setting, hwlib\+::target\+::pin\+\_\+in \&add\+Num, hwlib\+::terminal\+\_\+from \&display)
+\begin{DoxyCompactList}\small\item\em ///user class constructor \end{DoxyCompactList}\item 
+void \hyperlink{classuser_af17199133dfce25d87d53e716da3c65b}{Begin\+Setting} ()
+\begin{DoxyCompactList}\small\item\em ///\+Start setting date \& time  /// This function reads out the button that is \end{DoxyCompactList}\item 
+void \hyperlink{classuser_ae8ad51951cea1b9675c243bc63c3e7aa}{set\+\_\+date\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em ///set date and time  /// This function will allow you to set the date and time \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+///\+The user class for a O\+L\+ED display set time and date menu 
+
+/// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate this class is written to giva a user menu to enable the setting of date \& time by using hardware buttons 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classuser_a140937f8c81560822a5fc64cfefffcac}\label{classuser_a140937f8c81560822a5fc64cfefffcac}} 
+\index{user@{user}!user@{user}}
+\index{user@{user}!user@{user}}
+\subsubsection{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily user\+::user (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&}]{i2c,  }\item[{const uint8\+\_\+t}]{chipaddres,  }\item[{hwlib\+::target\+::pin\+\_\+in \&}]{save\+Setting,  }\item[{hwlib\+::target\+::pin\+\_\+in \&}]{start\+Setting,  }\item[{hwlib\+::target\+::pin\+\_\+in \&}]{add\+Num,  }\item[{hwlib\+::terminal\+\_\+from \&}]{display }\end{DoxyParamCaption})}
+
+
+
+///user class constructor 
+
+/// This takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda wich represents the i2c bus communcation const unit8\+\_\+t chipaddres wich represents the R\+TC i2c addres hwlib\+::target\+::pin\+\_\+in\&save\+Setting wich represents a button, wich is used to switch to a diffrent setting Example\+: from minutes to hours, hwlib\+::target\+::pin\+\_\+in\&start\+Setting wich represents a button wich is used to start the set date time loop, hwlib\+::target\+::pin\+\_\+in\&add\+Num wich represents a button wich is used to increment a value Example\+: intrements hours with n presses of the button, hwlib\+::terminal\+\_\+from \& display wich represents the Oled display a common call to this constructor would look something like this\+: \hyperlink{classDisplay}{Display} object(hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \& i2c,const uint8\+\_\+t chipaddres, hwlib\+::target\+::pin\+\_\+in \& save\+Setting, hwlib\+::target\+::pin\+\_\+in \& start\+Setting, hwlib\+::target\+::pin\+\_\+in \& add\+Num, hwlib\+::terminal\+\_\+from \& display); 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classuser_af17199133dfce25d87d53e716da3c65b}\label{classuser_af17199133dfce25d87d53e716da3c65b}} 
+\index{user@{user}!Begin\+Setting@{Begin\+Setting}}
+\index{Begin\+Setting@{Begin\+Setting}!user@{user}}
+\subsubsection{\texorpdfstring{Begin\+Setting()}{BeginSetting()}}
+{\footnotesize\ttfamily void user\+::\+Begin\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///\+Start setting date \& time  /// This function reads out the button that is 
+
+responsible for indicating a set date time start to an oled display as defined in the main.\+cpp if the function finds the button pressed it will call the set\+\_\+date\+\_\+time function to handle the setting \mbox{\Hypertarget{classuser_ae8ad51951cea1b9675c243bc63c3e7aa}\label{classuser_ae8ad51951cea1b9675c243bc63c3e7aa}} 
+\index{user@{user}!set\+\_\+date\+\_\+time@{set\+\_\+date\+\_\+time}}
+\index{set\+\_\+date\+\_\+time@{set\+\_\+date\+\_\+time}!user@{user}}
+\subsubsection{\texorpdfstring{set\+\_\+date\+\_\+time()}{set\_date\_time()}}
+{\footnotesize\ttfamily void user\+::set\+\_\+date\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+///set date and time  /// This function will allow you to set the date and time 
+
+with a menu on the oled display you will be able to set the following\+: seconds,minutes,hours date,month and year. incrementation of these values is per button push or by holding down the button until de desiered value is reached values. a common call to this function would look something like this\+: \hyperlink{classDisplay}{Display} object.\+Display\+\_\+print\+\_\+\+Date\+\_\+\+Time(unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]}, hwlib\+::terminal\+\_\+from \& display); 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

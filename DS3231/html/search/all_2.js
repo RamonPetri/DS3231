@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['get_5fdate',['get_Date',['../classDS3231.html#a3f239b6d1a7caea0d5968e96d4d01c33',1,'DS3231']]],
-  ['get_5ftime',['get_Time',['../classDS3231.html#a2fd39852689c72e04cc2ad67371976c1',1,'DS3231']]]
+  ['display',['Display',['../classDisplay.html',1,'Display'],['../classDisplay.html#ab8e9071525f8b0cf560a553cf6a4db03',1,'Display::Display()']]],
+  ['display_5fprint_5fdate_5ftime',['Display_print_Date_Time',['../classDisplay.html#af82ef97cafae973112710550db345571',1,'Display']]],
+  ['ds3231',['DS3231',['../classDS3231.html',1,'DS3231'],['../classDS3231.html#ae604eb753bffe5a7752c0c6131c199c0',1,'DS3231::DS3231()']]]
 ];

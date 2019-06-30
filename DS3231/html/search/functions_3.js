@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['print_5fdate_5ftime',['print_Date_Time',['../classDS3231.html#aeab337c5de40bcebaf6aa3e856d43e69',1,'DS3231']]],
-  ['printtestresults',['PrintTestResults',['../classTests.html#ae29be1edf96424ad0f81a15bbf5b983e',1,'Tests']]]
+  ['get_5fdate',['get_Date',['../classDS3231.html#a3f239b6d1a7caea0d5968e96d4d01c33',1,'DS3231']]],
+  ['get_5ftime',['get_Time',['../classDS3231.html#a2fd39852689c72e04cc2ad67371976c1',1,'DS3231']]]
 ];

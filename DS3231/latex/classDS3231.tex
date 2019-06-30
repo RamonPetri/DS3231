@@ -2,7 +2,7 @@
 \label{classDS3231}\index{D\+S3231@{D\+S3231}}
 
 
-// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  // This class is written to give a interface to work with a D\+S2321 R\+TC  
+/// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  /// This class is written to give a interface to work with a D\+S2321 R\+TC  
 
 
 
@@ -16,34 +16,114 @@ Inheritance diagram for D\+S3231\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}\label{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}} 
 \hyperlink{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}{D\+S3231} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres)
-\begin{DoxyCompactList}\small\item\em //\+D\+S3231 class constructor  // This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_aee414e3f1856b9495a79e659b92231c1}\label{classDS3231_aee414e3f1856b9495a79e659b92231c1}} 
+\begin{DoxyCompactList}\small\item\em ///\+D\+S3231 class constructor  /// This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c \end{DoxyCompactList}\item 
 void \hyperlink{classDS3231_aee414e3f1856b9495a79e659b92231c1}{set\+\_\+\+Time} (int hour, int minute, int second)
-\begin{DoxyCompactList}\small\item\em //\+Set the time on the \hyperlink{classDS3231}{D\+S3231}  // This function takes integer values wich represent the hours minutes and seconds \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_a9c7b9495c68607c0666006f318e9afca}\label{classDS3231_a9c7b9495c68607c0666006f318e9afca}} 
+\begin{DoxyCompactList}\small\item\em ///\+Set the time on the \hyperlink{classDS3231}{D\+S3231}  /// This function takes integer values wich represent the hours minutes and seconds \end{DoxyCompactList}\item 
 void \hyperlink{classDS3231_a9c7b9495c68607c0666006f318e9afca}{set\+\_\+\+Date} (int day, int month, int year)
-\begin{DoxyCompactList}\small\item\em //\+Sets the date on the \hyperlink{classDS3231}{D\+S3231}  // This function takes integer values wich represent the day month and year \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_a2fd39852689c72e04cc2ad67371976c1}\label{classDS3231_a2fd39852689c72e04cc2ad67371976c1}} 
+\begin{DoxyCompactList}\small\item\em ///\+Sets the date on the \hyperlink{classDS3231}{D\+S3231}  /// This function takes integer values wich represent the day month and year \end{DoxyCompactList}\item 
 unsigned char $\ast$ \hyperlink{classDS3231_a2fd39852689c72e04cc2ad67371976c1}{get\+\_\+\+Time} (unsigned char time\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em //\+Gets the time  // This function takes a unsinged char buffer time with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}\label{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}} 
+\begin{DoxyCompactList}\small\item\em ///\+Gets the time  /// This function takes a unsinged char buffer time with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
 unsigned char $\ast$ \hyperlink{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}{get\+\_\+\+Date} (unsigned char date\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em //\+Gets the date  // This function takes a unsinged char buffer date with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}\label{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}} 
+\begin{DoxyCompactList}\small\item\em ///\+Gets the date  /// This function takes a unsinged char buffer date with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
 void \hyperlink{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}{print\+\_\+\+Date\+\_\+\+Time} (unsigned char date\mbox{[}$\,$\mbox{]}, unsigned char time\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em //\+Print date and time to hwlib\+::cout for debug purposes  // This function has as purposes to let a user see time and date info without using any kind of display \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_a505df2184898f9773d41ae8fde8e647a}\label{classDS3231_a505df2184898f9773d41ae8fde8e647a}} 
+\begin{DoxyCompactList}\small\item\em ///\+Print date and time to hwlib\+::cout for debug purposes  /// This function has as purposes to let a user see time and date info without using any kind of display \end{DoxyCompactList}\item 
 int \hyperlink{classDS3231_a505df2184898f9773d41ae8fde8e647a}{convert\+\_\+bin\+\_\+to\+\_\+dec} (unsigned char value)
-\begin{DoxyCompactList}\small\item\em //\+Convert binary to decimal  // This function takes a uint8\+\_\+t value wich represents a binary \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}\label{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}} 
+\begin{DoxyCompactList}\small\item\em ///\+Convert binary to decimal  /// This function takes a uint8\+\_\+t value wich represents a binary \end{DoxyCompactList}\item 
 uint8\+\_\+t \hyperlink{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}{convert\+\_\+dec\+\_\+to\+\_\+bin} (int value)
-\begin{DoxyCompactList}\small\item\em //\+Convert decimal to binary  // This function takes a integer value wich represents a decimal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em ///\+Convert decimal to binary  /// This function takes a integer value wich represents a decimal \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  // This class is written to give a interface to work with a D\+S2321 R\+TC 
+/// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  /// This class is written to give a interface to work with a D\+S2321 R\+TC 
+
+These R\+TC\textquotesingle{}s can be used in a varity of application including servers, gps modules and embedded systems This class and classes that inherit from it are written to work with the library Hwlib from Wouter van Ooijen The hwlib library can be found at his github page\+: \href{https://github.com/wovo/hwlib}{\tt https\+://github.\+com/wovo/hwlib} This class makes it easy for a user to set and get the date \& time in the \hyperlink{classDS3231}{D\+S3231} registers written by Ramon Petri (28-\/06-\/2019) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}\label{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}} 
+\index{D\+S3231@{D\+S3231}!D\+S3231@{D\+S3231}}
+\index{D\+S3231@{D\+S3231}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{D\+S3231()}{DS3231()}}
+{\footnotesize\ttfamily D\+S3231\+::\+D\+S3231 (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&}]{i2c,  }\item[{const uint8\+\_\+t}]{chipaddres }\end{DoxyParamCaption})}
+
+
+
+///\+D\+S3231 class constructor  /// This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c 
+
+wich represents the i2c communication bus and a uint8\+\_\+t value wich represents the i2c addres of the \hyperlink{classDS3231}{D\+S3231} chip these varabels are used to initilize I2C bus communication A common call to this constructor would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object(hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda, a\+\_\+rtc\+\_\+chipaddres); 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDS3231_a505df2184898f9773d41ae8fde8e647a}\label{classDS3231_a505df2184898f9773d41ae8fde8e647a}} 
+\index{D\+S3231@{D\+S3231}!convert\+\_\+bin\+\_\+to\+\_\+dec@{convert\+\_\+bin\+\_\+to\+\_\+dec}}
+\index{convert\+\_\+bin\+\_\+to\+\_\+dec@{convert\+\_\+bin\+\_\+to\+\_\+dec}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{convert\+\_\+bin\+\_\+to\+\_\+dec()}{convert\_bin\_to\_dec()}}
+{\footnotesize\ttfamily int D\+S3231\+::convert\+\_\+bin\+\_\+to\+\_\+dec (\begin{DoxyParamCaption}\item[{unsigned char}]{value }\end{DoxyParamCaption})}
+
+
+
+///\+Convert binary to decimal  /// This function takes a uint8\+\_\+t value wich represents a binary 
+
+number Than the function will convert this number into a decimal number with the formula as specifide with in the function A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+convert\+\_\+bin\+\_\+to\+\_\+dec(binary\+\_\+value); \mbox{\Hypertarget{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}\label{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}} 
+\index{D\+S3231@{D\+S3231}!convert\+\_\+dec\+\_\+to\+\_\+bin@{convert\+\_\+dec\+\_\+to\+\_\+bin}}
+\index{convert\+\_\+dec\+\_\+to\+\_\+bin@{convert\+\_\+dec\+\_\+to\+\_\+bin}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{convert\+\_\+dec\+\_\+to\+\_\+bin()}{convert\_dec\_to\_bin()}}
+{\footnotesize\ttfamily uint8\+\_\+t D\+S3231\+::convert\+\_\+dec\+\_\+to\+\_\+bin (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+///\+Convert decimal to binary  /// This function takes a integer value wich represents a decimal 
+
+number Than the function will convert this number into a binary number with the formula as specifide with in the function A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+convert\+\_\+dec\+\_\+to\+\_\+bin(a\+\_\+integer\+\_\+value); \mbox{\Hypertarget{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}\label{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}} 
+\index{D\+S3231@{D\+S3231}!get\+\_\+\+Date@{get\+\_\+\+Date}}
+\index{get\+\_\+\+Date@{get\+\_\+\+Date}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Date()}{get\_Date()}}
+{\footnotesize\ttfamily unsigned char $\ast$ D\+S3231\+::get\+\_\+\+Date (\begin{DoxyParamCaption}\item[{unsigned char}]{date\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+///\+Gets the date  /// This function takes a unsinged char buffer date with a size of 3 wich will be filled with the 
+
+following\+: day, month, year This will be acomplised by first writing to either the day month or year register respectiflly after this the function will read a byte from the selected register after the dtae buffer is filled it will be returned A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+get\+\_\+\+Date(unsigned char buffer\+\_\+to\+\_\+store\+\_\+date\mbox{[}3\mbox{]}); \mbox{\Hypertarget{classDS3231_a2fd39852689c72e04cc2ad67371976c1}\label{classDS3231_a2fd39852689c72e04cc2ad67371976c1}} 
+\index{D\+S3231@{D\+S3231}!get\+\_\+\+Time@{get\+\_\+\+Time}}
+\index{get\+\_\+\+Time@{get\+\_\+\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Time()}{get\_Time()}}
+{\footnotesize\ttfamily unsigned char $\ast$ D\+S3231\+::get\+\_\+\+Time (\begin{DoxyParamCaption}\item[{unsigned char}]{time\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+///\+Gets the time  /// This function takes a unsinged char buffer time with a size of 3 wich will be filled with the 
+
+following\+: seconds, minutes, hours This will be acomplised by first writing to either the seconds minutes or hour register respectiflly after this the function will read a byte from the selected register after the Time buffer is filled it will be returned. A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+get\+\_\+\+Time(unsigned char buffer\+\_\+to\+\_\+store\+\_\+time\mbox{[}3\mbox{]}); \mbox{\Hypertarget{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}\label{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}} 
+\index{D\+S3231@{D\+S3231}!print\+\_\+\+Date\+\_\+\+Time@{print\+\_\+\+Date\+\_\+\+Time}}
+\index{print\+\_\+\+Date\+\_\+\+Time@{print\+\_\+\+Date\+\_\+\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{print\+\_\+\+Date\+\_\+\+Time()}{print\_Date\_Time()}}
+{\footnotesize\ttfamily void D\+S3231\+::print\+\_\+\+Date\+\_\+\+Time (\begin{DoxyParamCaption}\item[{unsigned char}]{date\mbox{[}$\,$\mbox{]},  }\item[{unsigned char}]{time\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+///\+Print date and time to hwlib\+::cout for debug purposes  /// This function has as purposes to let a user see time and date info without using any kind of display 
+
+This function takes two unsigned chars a date one and a time one This function will print the date and time in the following format\+: \char`\"{}dd-\/\+M\+M-\/\+Y\+Y ss-\/mm-\/\+H\+H\char`\"{} this function also checks if any values are lower than 10 if so the function will print a leading 0 A common call to this fucntion will look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+print\+\_\+\+Date\+\_\+\+Time(unsigned char your\+\_\+\+Date\+\_\+buffer\mbox{[}$\,$\mbox{]}, unsigned char your\+\_\+time\+\_\+buffer\mbox{[}$\,$\mbox{]}); \mbox{\Hypertarget{classDS3231_a9c7b9495c68607c0666006f318e9afca}\label{classDS3231_a9c7b9495c68607c0666006f318e9afca}} 
+\index{D\+S3231@{D\+S3231}!set\+\_\+\+Date@{set\+\_\+\+Date}}
+\index{set\+\_\+\+Date@{set\+\_\+\+Date}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Date()}{set\_Date()}}
+{\footnotesize\ttfamily void D\+S3231\+::set\+\_\+\+Date (\begin{DoxyParamCaption}\item[{int}]{day,  }\item[{int}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+
+
+///\+Sets the date on the \hyperlink{classDS3231}{D\+S3231}  /// This function takes integer values wich represent the day month and year 
+
+The function than makes a i2c bit banged bus and constructs a Writebuffer that contains the following\+: Adress pointer(0x04) and the converted day month and year Than this function starts a I2C write transaction to write the buffer to the date registers(0x04,0x05,0x06) on the chip. A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+set\+\_\+\+Date(integer day\+\_\+value, integer month\+\_\+value, integer year\+\_\+value); \mbox{\Hypertarget{classDS3231_aee414e3f1856b9495a79e659b92231c1}\label{classDS3231_aee414e3f1856b9495a79e659b92231c1}} 
+\index{D\+S3231@{D\+S3231}!set\+\_\+\+Time@{set\+\_\+\+Time}}
+\index{set\+\_\+\+Time@{set\+\_\+\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{set\+\_\+\+Time()}{set\_Time()}}
+{\footnotesize\ttfamily void D\+S3231\+::set\+\_\+\+Time (\begin{DoxyParamCaption}\item[{int}]{hour,  }\item[{int}]{minute,  }\item[{int}]{second }\end{DoxyParamCaption})}
+
+
+
+///\+Set the time on the \hyperlink{classDS3231}{D\+S3231}  /// This function takes integer values wich represent the hours minutes and seconds 
+
+The function than makes a i2c bit banged bus and constructs a Writebuffer that contains the following\+: Adress pointer(0x00) and the converted hours minutes and seconds Than this function starts a I2C write transaction to write the buffer to the time registers(0x00,0x01,0x02) on the chip. A common call to this function would look something like this\+: \hyperlink{classDS3231}{D\+S3231} object.\+set\+\_\+\+Time(integer hour\+\_\+value, integer minute\+\_\+value, integer seconds\+\_\+value); 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
