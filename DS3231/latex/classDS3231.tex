@@ -1,0 +1,51 @@
+\hypertarget{classDS3231}{}\section{D\+S3231 Class Reference}
+\label{classDS3231}\index{D\+S3231@{D\+S3231}}
+
+
+// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  // This class is written to give a interface to work with a D\+S2321 R\+TC  
+
+
+
+
+{\ttfamily \#include $<$D\+S3231.\+h$>$}
+
+
+
+Inheritance diagram for D\+S3231\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}\label{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}} 
+\hyperlink{classDS3231_ae604eb753bffe5a7752c0c6131c199c0}{D\+S3231} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres)
+\begin{DoxyCompactList}\small\item\em //\+D\+S3231 class constructor  // This constructor takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda i2c \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_aee414e3f1856b9495a79e659b92231c1}\label{classDS3231_aee414e3f1856b9495a79e659b92231c1}} 
+void \hyperlink{classDS3231_aee414e3f1856b9495a79e659b92231c1}{set\+\_\+\+Time} (int hour, int minute, int second)
+\begin{DoxyCompactList}\small\item\em //\+Set the time on the \hyperlink{classDS3231}{D\+S3231}  // This function takes integer values wich represent the hours minutes and seconds \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_a9c7b9495c68607c0666006f318e9afca}\label{classDS3231_a9c7b9495c68607c0666006f318e9afca}} 
+void \hyperlink{classDS3231_a9c7b9495c68607c0666006f318e9afca}{set\+\_\+\+Date} (int day, int month, int year)
+\begin{DoxyCompactList}\small\item\em //\+Sets the date on the \hyperlink{classDS3231}{D\+S3231}  // This function takes integer values wich represent the day month and year \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_a2fd39852689c72e04cc2ad67371976c1}\label{classDS3231_a2fd39852689c72e04cc2ad67371976c1}} 
+unsigned char $\ast$ \hyperlink{classDS3231_a2fd39852689c72e04cc2ad67371976c1}{get\+\_\+\+Time} (unsigned char time\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em //\+Gets the time  // This function takes a unsinged char buffer time with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}\label{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}} 
+unsigned char $\ast$ \hyperlink{classDS3231_a3f239b6d1a7caea0d5968e96d4d01c33}{get\+\_\+\+Date} (unsigned char date\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em //\+Gets the date  // This function takes a unsinged char buffer date with a size of 3 wich will be filled with the \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}\label{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}} 
+void \hyperlink{classDS3231_aeab337c5de40bcebaf6aa3e856d43e69}{print\+\_\+\+Date\+\_\+\+Time} (unsigned char date\mbox{[}$\,$\mbox{]}, unsigned char time\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em //\+Print date and time to hwlib\+::cout for debug purposes  // This function has as purposes to let a user see time and date info without using any kind of display \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_a505df2184898f9773d41ae8fde8e647a}\label{classDS3231_a505df2184898f9773d41ae8fde8e647a}} 
+int \hyperlink{classDS3231_a505df2184898f9773d41ae8fde8e647a}{convert\+\_\+bin\+\_\+to\+\_\+dec} (unsigned char value)
+\begin{DoxyCompactList}\small\item\em //\+Convert binary to decimal  // This function takes a uint8\+\_\+t value wich represents a binary \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}\label{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}} 
+uint8\+\_\+t \hyperlink{classDS3231_adbe3aa8366cf09b1ec1f7d0e4aa826db}{convert\+\_\+dec\+\_\+to\+\_\+bin} (int value)
+\begin{DoxyCompactList}\small\item\em //\+Convert decimal to binary  // This function takes a integer value wich represents a decimal \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+// The \hyperlink{classDS3231}{D\+S3231} class written to be used with a \hyperlink{classDS3231}{D\+S3231} R\+TC  // This class is written to give a interface to work with a D\+S2321 R\+TC 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+S3231.\+h\item 
+D\+S3231.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\hypertarget{classDisplay}{}\section{Display Class Reference}
+\label{classDisplay}\index{Display@{Display}}
+
+
+//\+The display class for a O\+L\+ED display  
+
+
+
+
+{\ttfamily \#include $<$Display.\+h$>$}
+
+
+
+Inheritance diagram for Display\+:
+% FIG 0
+
+
+Collaboration diagram for Display\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}{Display} (hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&i2c, const uint8\+\_\+t chipaddres, hwlib\+::terminal\+\_\+from \&display, unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em //\+Display class constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDisplay_af82ef97cafae973112710550db345571}\label{classDisplay_af82ef97cafae973112710550db345571}} 
+void \hyperlink{classDisplay_af82ef97cafae973112710550db345571}{Display\+\_\+print\+\_\+\+Date\+\_\+\+Time} (unsigned char Time\mbox{[}$\,$\mbox{]}, unsigned char Date\mbox{[}$\,$\mbox{]}, hwlib\+::terminal\+\_\+from \&display)
+\begin{DoxyCompactList}\small\item\em //\+Print date time function  // This function will format and print the date and time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+//\+The display class for a O\+L\+ED display 
+
+// This class inherits form \hyperlink{classDS3231}{D\+S3231} and there for requires hwlib to operate 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}\label{classDisplay_ab8e9071525f8b0cf560a553cf6a4db03}} 
+\index{Display@{Display}!Display@{Display}}
+\index{Display@{Display}!Display@{Display}}
+\subsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily Display\+::\+Display (\begin{DoxyParamCaption}\item[{hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda \&}]{i2c,  }\item[{const uint8\+\_\+t}]{chipaddres,  }\item[{hwlib\+::terminal\+\_\+from \&}]{display,  }\item[{unsigned char}]{Time\mbox{[}$\,$\mbox{]},  }\item[{unsigned char}]{Date\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+//\+Display class constructor 
+
+// This takes a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Display.\+h\item 
+Display.\+cpp\end{DoxyCompactItemize}

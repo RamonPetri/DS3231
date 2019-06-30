@@ -18,8 +18,8 @@ int main( void ){
     auto display = hwlib::terminal_from( oled, font );
     unsigned char time[3];
     unsigned char date[3];
-//    Tests TestClock(i2c_bus,rtcAddres,date);
-//    TestClock.PrintTestResults();
+    //Tests TestClock(i2c_bus,rtcAddres,date,time);
+    //TestClock.PrintTestResults();
     DS3231 clock(i2c_bus,rtcAddres);
     Display dis(i2c_bus,rtcAddres,display,time,date);
     user Gui(i2c_bus, rtcAddres,userSave,userStart,userSetting,display);
