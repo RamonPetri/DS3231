@@ -21,6 +21,7 @@ The body of the two function under the line where reused from a diffrent project
 // Credits to Andrew W for sharing his sketch at https://www.instructables.com/id/Arduino-DS3231-RTC-Clock/ wich contains the origin of  the functions 
 
 //original functions as found in the sketch written by Andrew W:
+-----------------------------------------------------------------
 byte decToBcd(byte val)
 {
   return ( (val / 10 * 16) + (val % 10) );
@@ -30,8 +31,9 @@ byte bcdToDec(byte val)
 {
   return ( (val / 16 * 10) + (val % 16) );
 }
----------------------------------------------------------------------------------------------------------------------------
+
 //Functions as found in my DS3231 library
+---------------------------------------------------------------
 int DS3231::convert_bin_to_dec(unsigned char value){
         return ((value/16*10) + (value%16));
 }
