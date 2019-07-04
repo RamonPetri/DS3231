@@ -12,3 +12,30 @@ The device incorporates a battery input, and maintains
 accurate timekeeping when main power to the device
 is interrupted. The integration of the crystal resonator
 enhances the long-term accuracy of the device.
+
+The body of the two function under the line where reused from a diffrent project 
+ as written by:
+// 15th July 2015, Andrew W. - arwhitus.weebly.com
+// Visit arwhitus.weebly.com for more info or to contact author for any reason
+
+// Credits to Andrew W for sharing his sketch at https://www.instructables.com/id/Arduino-DS3231-RTC-Clock/ wich contains the origin of  the functions 
+
+//original functions as found in the sketch written by Andrew W:
+byte decToBcd(byte val)
+{
+  return ( (val / 10 * 16) + (val % 10) );
+}
+
+byte bcdToDec(byte val)
+{
+  return ( (val / 16 * 10) + (val % 16) );
+}
+---------------------------------------------------------------------------------------------------------------------------
+//Functions as found in my DS3231 library
+int DS3231::convert_bin_to_dec(unsigned char value){
+        return ((value/16*10) + (value%16));
+}
+
+uint8_t DS3231::convert_dec_to_bin(int value){
+        return ( ( value/10*16)+(value%10));
+}
