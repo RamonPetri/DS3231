@@ -13,7 +13,7 @@ accurate timekeeping when main power to the device
 is interrupted. The integration of the crystal resonator
 enhances the long-term accuracy of the device.
 
-The body of the two function under the line where reused from a diffrent project 
+The body of the two function below where reused from a diffrent project 
  as written by:
 // 15th July 2015, Andrew W. - arwhitus.weebly.com
 // Visit arwhitus.weebly.com for more info or to contact author for any reason
