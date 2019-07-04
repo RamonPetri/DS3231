@@ -15,8 +15,9 @@ enhances the long-term accuracy of the device.
 
 The body of the two function below where reused from a diffrent project 
  as written by:
-// 15th July 2015, Andrew W. - arwhitus.weebly.com
-// Credits to Andrew W for sharing his sketch at https://www.instructables.com/id/Arduino-DS3231-RTC-Clock/ wich contains the origin of  the functions 
+ 
+// Andrew W. on  15th July 2015, - arwhitus.weebly.com
+// Credits to Andrew W. For sharing his sketch at https://www.instructables.com/id/Arduino-DS3231-RTC-Clock/ wich contains the origin of  the functions 
 
 //original functions as found in the sketch written by Andrew W:
 -----------------------------------------------------------------
