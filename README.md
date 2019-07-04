@@ -8,6 +8,8 @@ with this library the following things can be accomplished:
  - setting the time and date trough software or with buttons if one includes the user class.
  - Reading the time and date from the DS3231 registers.
  - Printing time and date on a Oled or directly to a linux ubuntu terminal.
+
+
 This library requirs library Hwlib from Wouter van Ooijen to work.
 The hwlib library can be found at his github page: https://github.com/wovo/hwlib
 
